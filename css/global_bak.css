@@ -1,0 +1,27 @@
+body {
+	font-family:arial;
+	font-size:12px;
+}
+header {
+	font-weight:bold;
+	font-size:150%;
+}
+section {
+	border:1px solid;
+	padding:5px;
+	margin:5px 0;
+}
+article {
+	border:1px solid;
+	padding:5px;
+	margin:5px;
+}
+section header {
+	font-size:120%;
+}
+article header {
+	font-size:120%;
+}
+footer {
+	font-size:90%;
+}
