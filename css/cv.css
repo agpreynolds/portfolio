@@ -1,0 +1,7 @@
+.dates {font-style:italic;}
+
+.content-collapsed ul { display:none; }
+
+article.container {border-bottom:1px solid;}
+.container article header {overflow:hidden;}
+.container article header div, .container article header img { float:left; }

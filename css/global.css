@@ -1,26 +1,42 @@
-body {
+body,h1,h2,h3,h4,p,ul,li {
 	padding:0;
 	margin:0;
 }
-
 body {
-	font-family:arial;
-	font-size:16px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	color:#000;
+	width:100%;
+	max-width:1000px;
+	margin:0 auto;
+}
+img {
+	width:100%;
+}
+footer {
+	font-size:80%;
+	padding:5px 0;
+}
+h1 {
 	text-align:center;
 }
-#home {
-	position:absolute;
-	top:0;left:0;
-}
-header {
-	font-weight:bold;
-	font-size:250%;
-	padding:5px;
+p {
+	margin:5px 0;
 }
 nav {
 	padding:5px;
 	margin:auto;
+	text-align:center;
+}
+label {
+	font-size:90%;
+	margin:10px 0 0 0;
+}
+label, input, textarea {
+	display:block;
+}
+
+ul {
+	margin-left:20px;
 }
 nav a {
 	color:#000;
@@ -29,4 +45,39 @@ nav a {
 }
 nav a:hover {
 	border-bottom:4px solid black;
+}
+
+.wrapper {
+	padding:5px 0;
+	border-bottom:1px dotted #000;
+	border-top:1px dotted #000;
+}
+
+div.img {
+	width:310px;
+	height:220px;
+	margin:5px 0;
+}
+
+section#portfolio {
+	overflow:hidden;
+}
+
+section#portfolio article {
+	width:310px;
+	height:350px;
+	padding:5px;
+	margin:5px;
+	float:left;
+	text-align:center;
+	border:1px solid black;
+	border-radius:10px;
+}
+
+section#portfolio a {
+	background:blue;
+	padding:5px;
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;
 }
