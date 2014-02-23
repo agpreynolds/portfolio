@@ -49,7 +49,7 @@ header nav a:hover {
 	border-bottom:4px solid black;
 }
 footer nav {
-	float:left;
+	text-align:right;
 }
 footer nav a {
 	padding:5px 10px 5px 5px;
@@ -64,7 +64,6 @@ footer nav a:hover {
 	border-top:1px dotted #000;
 }
 footer section#links {overflow:hidden;}
-footer section#social {float:left;}
 
 div.img {
 	width:310px;
