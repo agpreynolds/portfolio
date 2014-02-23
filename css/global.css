@@ -22,11 +22,6 @@ h1 {
 p {
 	margin:5px 0;
 }
-nav {
-	padding:5px;
-	margin:auto;
-	text-align:center;
-}
 label {
 	font-size:90%;
 	margin:10px 0 0 0;
@@ -38,13 +33,29 @@ label, input, textarea {
 ul {
 	margin-left:20px;
 }
-nav a {
-	color:#000;
+a {
+	color:#000;	
 	text-decoration:none;
 	padding:5px;
 }
-nav a:hover {
+header nav {
+	padding:5px;
+	margin:auto;
+	text-align:center;
+}
+header nav a {
+}
+header nav a:hover {
 	border-bottom:4px solid black;
+}
+footer nav {
+	float:left;
+}
+footer nav a {
+	padding:5px 10px 5px 5px;
+}
+footer nav a:hover {
+	text-decoration:underline;
 }
 
 .wrapper {
@@ -52,6 +63,8 @@ nav a:hover {
 	border-bottom:1px dotted #000;
 	border-top:1px dotted #000;
 }
+footer section#links {overflow:hidden;}
+footer section#social {float:left;}
 
 div.img {
 	width:310px;

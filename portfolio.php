@@ -17,7 +17,7 @@ include('includes/start.php');
 		<p>My final year project</p>
 
 		<a class="more">See More</a>
-		<a href="http://cookbook.agpreyolds.co.uk" target="_blank">View Project</a>
+		<a href="http://cookbook.agpreynolds.co.uk" target="_blank">View Project</a>
 	</article>
 	<article id="webgl">
 		<header>
@@ -29,7 +29,7 @@ include('includes/start.php');
 		<p>A 3D animation of a globe orbited by a satellite created in Webgl</p>
 
 		<a class="more">See More</a>
-		<a href="http://webgl.agpreyolds.co.uk" target="_blank">View Project</a>
+		<a href="http://webgl.agpreynolds.co.uk" target="_blank">View Project</a>
 	</article>
 	<article id="websockets">
 		<header>
@@ -41,7 +41,7 @@ include('includes/start.php');
 		<p>Using websockets to update sports scores in real time</p>
 
 		<a class="more">See More</a>
-		<a href="http://sportsball.agpreyolds.co.uk" target="_blank">View Project</a>
+		<a href="http://sportsball.agpreynolds.co.uk" target="_blank">View Project</a>
 	</article>
 	<article id="thepeahensnest">
 		<header>
