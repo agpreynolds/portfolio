@@ -10,7 +10,7 @@
 	<p><?php echo $item['abstract']; ?></p>
 
 	<section class="links">
-		<a id="<?php echo $id . '_more';?>" class="more">See More</a>
-		<a href="<?php echo $item['uri']; ?>" target="_blank">View Project</a>
+		<a id="<?php echo $id . '_more';?>" class="more blue">See More</a>
+		<a href="<?php echo $item['uri']; ?>" class="blue" target="_blank">View Project</a>
 	</section>
 </article>

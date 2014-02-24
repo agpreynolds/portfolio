@@ -33,7 +33,7 @@ label, input, textarea {
 ul {
 	margin-left:20px;
 }
-a {
+header a, nav a {
 	color:#000;	
 	text-decoration:none;
 	padding:5px;
@@ -42,8 +42,6 @@ header nav {
 	padding:5px;
 	margin:auto;
 	text-align:center;
-}
-header nav a {
 }
 header nav a:hover {
 	border-bottom:4px solid black;
@@ -68,21 +66,39 @@ footer section#links {overflow:hidden;}
 div.img {
 	width:310px;
 	height:220px;
-	margin:5px auto;
+	margin:5px 0;
+}
+
+section#portfolio div.img {
+	margin:5px auto;	
 }
 
 article.item {
-	text-align:center;
 	padding:5px;
 }
 
-article.item a {
+article.item a.blue {
 	background:#0077b5;
 	padding:5px 10px;
 	cursor:pointer;
 	color:#fff;
 	text-decoration:none;
 	border-radius:10px;
+}
+
+article.item .links {
+	margin:0 auto;
+	overflow:hidden;
+}
+
+section#portfolio article.item .links {
+	width:220px;	
+}
+
+article.item .links a.blue {
+	display:block;
+	float:left;
+	margin:10px 5px;
 }
 
 section#portfolio {
@@ -95,5 +111,6 @@ section#portfolio article.item {
 	margin:5px;
 	border:1px solid black;
 	border-radius:10px;
+	text-align:center;
 }
 

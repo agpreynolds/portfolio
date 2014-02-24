@@ -10,7 +10,8 @@ div.popup-bg {
 section.popup {
     position: absolute;
     z-index:100;
-    background:#fff;     
+    background:#fff;
+    width:80%;   
 }
 
 section.popup a.close-link {float:right;}
