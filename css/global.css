@@ -16,7 +16,7 @@ footer {
 	font-size:80%;
 	padding:5px 0;
 }
-h1 {
+h1,h2 {
 	text-align:center;
 }
 p {
@@ -68,28 +68,32 @@ footer section#links {overflow:hidden;}
 div.img {
 	width:310px;
 	height:220px;
-	margin:5px 0;
+	margin:5px auto;
+}
+
+article.item {
+	text-align:center;
+	padding:5px;
+}
+
+article.item a {
+	background:#0077b5;
+	padding:5px 10px;
+	cursor:pointer;
+	color:#fff;
+	text-decoration:none;
+	border-radius:10px;
 }
 
 section#portfolio {
 	overflow:hidden;
 }
-
-section#portfolio article {
+section#portfolio article.item {
+	float:left;
 	width:310px;
 	height:350px;
-	padding:5px;
 	margin:5px;
-	float:left;
-	text-align:center;
 	border:1px solid black;
 	border-radius:10px;
 }
 
-section#portfolio a {
-	background:blue;
-	padding:5px;
-	cursor:pointer;
-	color:#fff;
-	text-decoration:none;
-}

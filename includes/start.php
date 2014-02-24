@@ -11,13 +11,18 @@
 	<head>
 		<title>Alex Reynolds - <?php echo $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="/css/global.css">
+		<link rel="stylesheet" type="text/css" href="/css/overlay.css">
 		<link rel="stylesheet" type="text/css" href="/css/<?php echo $id; ?>.css">
 		<script type="text/javascript" src="/js/lib/jQuery.js"></script>
+		<script type="text/javascript" src="/js/lib/jQuery_ext.js"></script>
+		<script type="text/javascript" src="/js/lib/analytics.js"></script>
+		<script type="text/javascript" src="/js/overlay.js"></script>
 		<script type="text/javascript" src="/js/<?php echo $id; ?>.js"></script>
 	</head>
 	<body>
 		<header>
 			<h1><a href="/">Alex Reynolds</a></h1>
+			<h2>Web Developer</h2>
 			<?php include ('nav.html'); ?>
-			<h2><?php echo $title; ?></h2>
+			<h3><?php echo $title; ?></h3>
 		</header>

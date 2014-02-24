@@ -10,7 +10,7 @@ include('includes/start.php');
 	<?php
 		$items = include('php/configuration/portfolio.php');
 
-		foreach ($items as $item) {
+		foreach ($items as $id => $item) {
 			include('includes/portfolio_item.php');
 		}
 	?>	
