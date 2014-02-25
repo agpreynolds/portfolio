@@ -3,13 +3,16 @@
 return [
 	'fyp' => [
 		'name' => 'Semantic Recipe Finder',
-		'image' => 'thepeahensnest.png',
+		'image' => 'fyp.png',
 		'abstract' => 'My final year project',
 		'content' => "
 			<p>My final year project is to build an application which can be used to upload and search for recipes.</p>
 			<p>The application has been built using PHP with the front end developed using HTML, CSS and JavaScript including jQuery.</p>
 		",
 		'uri' => 'http://cookbook.agpreynolds.co.uk',
+		'tags' => [
+			'HTML','CSS','JavaScript','jQuery','PHP','Sparql','Turtle','MySQL','ARC2'
+		],
 		'gitRepo' => 'cookbook'
 	],
 	'webgl' => [
@@ -30,11 +33,14 @@ return [
 			<p>All of these requirements were successfully implemented resulting in a first class mark for the assignment. I plan to re-visit the project to make the animation full screen and enhance the interactivity.</p>
 		",
 		'uri' => 'http://webgl.agpreynolds.co.uk',
+		'tags' => [
+			'HTML','CSS','JavaScript','Webgl'
+		],
 		'gitRepo' => 'webgl_globe'
 	],
 	'websockets' =>	[
 		'name' => 'Real Time Sports Results',
-		'image' => 'globe.png',
+		'image' => 'scores.png',
 		'abstract' => 'Using websockets to update sports scores in real time',
 		'content' => "
 			<p>This application was created as part of a group research project into the use of websockets compared to http polling in communicating real time data.</p>
@@ -58,7 +64,7 @@ return [
 	],
 	'pubhack2' => [
 		'name' => 'First World Problems',
-		'image' => 'thepeahensnest.png',
+		'image' => 'pubhack.png',
 		'abstract' => 'Web application following twitter hashtag #firstworldproblems and suggesting related real world news articles',
 		'content' => "
 			<p>This simple application was actually created as during the <a href='http://pubhack.co.uk'>Pubhack</a> event</p>

@@ -40,7 +40,7 @@ var overlay = overlay || {
             	contentContainer.html(response);
             	align();
                 
-                $('body').animate({
+                $('body,html').animate({
                     scrollTop: $('body').offset().top
                 }, 500);
             	
