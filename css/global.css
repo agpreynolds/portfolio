@@ -3,19 +3,12 @@ body,h1,h2,h3,h4,p,ul,li {
 	margin:0;
 }
 body {
-	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-	color:#000;
-	width:100%;
-	max-width:1000px;
-	margin:0 auto;
+	font-family: 'FontAwesome',proxima-nova,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 img {
 	width:100%;
 }
-footer {
-	font-size:80%;
-	padding:5px 0;
-}
+
 h1,h2 {
 	text-align:center;
 }
@@ -33,35 +26,6 @@ label, input, textarea {
 ul {
 	margin-left:20px;
 }
-header a, nav a {
-	color:#000;	
-	text-decoration:none;
-	padding:5px;
-}
-header nav {
-	padding:5px;
-	margin:auto;
-	text-align:center;
-}
-header nav a:hover {
-	border-bottom:4px solid black;
-}
-footer nav {
-	text-align:right;
-}
-footer nav a {
-	padding:5px 10px 5px 5px;
-}
-footer nav a:hover {
-	text-decoration:underline;
-}
-
-.wrapper {
-	padding:5px 0;
-	border-bottom:1px dotted #000;
-	border-top:1px dotted #000;
-}
-footer section#links {overflow:hidden;}
 
 div.img {
 	width:310px;
@@ -101,16 +65,19 @@ article.item .links a.blue {
 	margin:10px 5px;
 }
 
-section#portfolio {
-	overflow:hidden;
-}
 section#portfolio article.item {
-	float:left;
-	width:310px;
-	height:350px;
 	margin:5px;
 	border:1px solid black;
 	border-radius:10px;
 	text-align:center;
 }
 
+
+.navbar {
+	background:#D23641;
+	margin:0;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+	color:#FFF;
+}

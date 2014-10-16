@@ -1,10 +1,10 @@
-<footer>
+<footer class="footer">
 	<section id="links">
-		<?php include('nav.html'); ?>
 		<section id="social">
 			<?php 
 				include('social/github.html');
 				include('social/linkedin.html'); 
+				include('social/twitter.html'); 
 			?>
 		</section>
 	</section>

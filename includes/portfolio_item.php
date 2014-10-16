@@ -1,6 +1,6 @@
 <?php $gitUser = isset($item['gitUser']) ? $item['gitUser'] : 'palacealex'; ?>
 
-<article id="<?php echo $id; ?>" class="item">
+<article id="<?php echo $id; ?>" class="item col-md-4">
 	<header>
 		<h3><?php echo $item['name']; ?></h3>
 	</header>
