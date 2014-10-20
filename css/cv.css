@@ -2,6 +2,6 @@
 
 .content-collapsed ul { display:none; }
 
-article.container {border-bottom:1px solid;}
-.container article header {overflow:hidden;}
-.container article header div, .container article header img { float:left; }
+article header {overflow:hidden;}
+article header div, article header img { float:left; }
+article header img { max-width:100px; }

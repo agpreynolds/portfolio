@@ -8,7 +8,7 @@ include('includes/start.php');
 $form = new contact($_POST);
 ?>
 
-<section id="contact" class="container">
+<section id="contact" class="container-fluid">
 
 
 	<form class="form-horizontal" role="form" name="contact" method="post" action="contact.php">

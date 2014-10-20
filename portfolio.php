@@ -6,9 +6,9 @@ include('includes/start.php');
 
 ?>
 
-<section id="portfolio" class="container">
+<section id="portfolio" class="container-fluid">
 	<?php
-		$maxItems = 3;
+		$maxItems = 2;
 		$items = include('php/configuration/portfolio.php');
 
 		$count = 1;

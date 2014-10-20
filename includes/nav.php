@@ -14,6 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
+        <li class = "<?php echo ($id == 'cv') ? 'active' : ''; ?>"><a href="/cv.php">EXPERIENCE</a></li>
         <li class = "<?php echo ($id == 'portfolio') ? 'active' : ''; ?>"><a href="/portfolio.php">PORTFOLIO</a></li>
         <li class = "<?php echo ($id == 'contact') ? 'active' : ''; ?>"><a href="/contact.php">CONTACT</a></li>        
       </ul>      

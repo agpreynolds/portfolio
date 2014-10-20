@@ -6,48 +6,45 @@ include('includes/start.php');
 
 ?>
 
-<section id="cv" class="wrapper">
-	<article class="container" id="work">
+<section id="cv" class="container-fluid">
+	<article id="work">
 		<header>
-			<h3>Experience</h3>
+			<h2>Experience</h2>
 		</header>
-		<article id="esteeLauder2">
+		<article>
 			<header>
-				<div>
-					<h3>Undergraduate Engineer</h3>
-					<h4>Estee Lauder Companies</h4>
-					<p class="dates">September 2013 - Present</p>
-				</div>
-				<img src="/media/images/lauder.png" alt="Estee Lauder Companies">
+				<h3>June 2014 - Present</h3>
+				<h4>Webree.com, Portsmouth</h4>
+				<h5>Junior Developer</h5>
 			</header>
 		</article>
-		<article id="esteeLauder1">
-			<header>
-				<div>
-					<h3>Undergraduate Placement Student</h3>
-					<h4>Estee Lauder Companies</h4>
-					<p class="dates">September 2012 - September 2013</p>
+		<article>
+			<header class="row">
+				<div class="col-md-8">
+					<h3>September 2012 - May 2014</h3>
+					<h4>Estee Lauder Companies, Fareham</h4>					
+					<h5>Undergraduate Engineer / Undergraduate Placement Student</h5>
 				</div>
-				<img src="/media/images/lauder.png" alt="Estee Lauder Companies">
+				<img class="col-md-4" src="/media/images/lauder.png" alt="Estee Lauder Companies">
 			</header>
-		</article>
+		</article>		
 	</article>
 
-	<article class="container" id="education">
+	<article id="education">
 		<header>
-			<h3>Qualifications</h3>
+			<h2>Qualifications</h2>
 		</header>
-		<article id="portsmouth">
+		<article>
 			<header>
-				<h3>University of Portsmouth</h3>
-				<h4>BSc (Hons) Web Technologies</h4>
-				<p class="dates">September 2010 - Present</p>
+				<h3>September 2010 - May 2014</h3>
+				<h4>University of Portsmouth</h4>
+				<h5>BSc (Hons) Web Technologies</h5>
 			</header>
 		</article>
 		<article id="sixth">
 			<header>
-				<h3>Collingwood College</h3>
-				<p class="dates">September 2003 - 2010</p>
+				<h3>September 2003 - 2010</h3>
+				<h4>Collingwood College</h4>
 			</header>
 			<section class="results content-collapsed">
 				<article>
@@ -88,6 +85,7 @@ include('includes/start.php');
 			</section>
 		</article>
 	</article>
+
 </section>
 
-<?php include('includes/footer.html'); ?>
+<?php include('includes/footer.php'); ?>

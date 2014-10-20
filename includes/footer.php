@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer container-fluid">
 	<section id="links">
 		<section id="social">
 			<?php 

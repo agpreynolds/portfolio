@@ -59,8 +59,7 @@ return [
 			<p>The Peahen's Nest is a new start up business selling hand painted fashion and homeware textiles. The full website is currently under development, hoping for a launch by May 2014</p>
 			<p>Until then you can take a look at the coming soon site.</p>
 		",
-		'uri' => 'http://thepeahensnest.co.uk',
-		'gitRepo' => 'thepeahensnest'
+		'uri' => 'http://thepeahensnest.co.uk'		
 	],
 	'pubhack2' => [
 		'name' => 'First World Problems',
@@ -73,6 +72,15 @@ return [
 		'uri' => 'http://pubhack.agpreynolds.co.uk',
 		'gitRepo' => 'pubhack'
 	],
+	'pubhack3' => [
+		'name' => 'Awkward Situations',
+		'image' => '',
+		'abstract' => "This is an application which enables users to have a message texted to their phone with a randomly generated excuse for escaping an awkward situation",
+		'content' =>"This is an application which enables users to have a message texted to their phone with a randomly generated excuse for escaping an awkward situation",
+		'uri' => 'http://awks.agpreynolds.co.uk',
+		'gitUser' => 'ggowen',
+		'gitRepo' => 'awkroulette'
+	]
 
 ];
 

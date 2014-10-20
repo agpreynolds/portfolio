@@ -11,7 +11,6 @@
 	<head>
 		<title>Alex Reynolds - <?php echo $title; ?></title>
 		<link rel="stylesheet" type="text/css" href="/packages/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="/packages/bootstrap/css/bootstrap-sticky-footer.css">
 		<link rel="stylesheet" type="text/css" href="/css/global.css">
 		<link rel="stylesheet" type="text/css" href="/css/overlay.css">
 		<link rel="stylesheet" type="text/css" href="/css/<?php echo $id; ?>.css">
