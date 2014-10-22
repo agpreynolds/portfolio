@@ -13,14 +13,14 @@ ul {
 	margin-left:20px;
 }
 
-div.img {
-	width:310px;
-	height:220px;
+div.img {	
 	margin:5px 0;
 }
 
-section#portfolio div.img {
-	margin:5px auto;	
+#feature {overflow: hidden;}
+section#portfolio #feature div.media {
+	float:left;
+	margin:20px;	
 }
 
 article.item .links {
@@ -34,6 +34,7 @@ section#portfolio article.item .links {
 
 section#portfolio article.item {	
 	text-align:center;
+	height:400px;
 }
 
 

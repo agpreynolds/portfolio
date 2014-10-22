@@ -6,7 +6,7 @@ include('includes/start.php');
 
 ?>
 
-<section id="cv" class="container-fluid">
+<section id="cv">
 	<article id="work">
 		<header>
 			<h2>Experience</h2>

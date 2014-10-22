@@ -8,7 +8,7 @@ include('includes/start.php');
 $form = new contact($_POST);
 ?>
 
-<section id="contact" class="container-fluid">
+<section id="contact">
 
 
 	<form class="form-horizontal" role="form" name="contact" method="post" action="contact.php">
@@ -40,7 +40,7 @@ $form = new contact($_POST);
 		
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<input class="btn btn-default" type="submit" value="Send Message"/>
+				<input class="btn btn-primary" type="submit" value="Send Message"/>
 			</div>
 		</div>
 
