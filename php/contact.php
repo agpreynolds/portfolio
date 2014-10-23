@@ -25,14 +25,17 @@ class contact {
 		
 		if (!$this->messages) {
 			$this->send();
-		}
+		}		
+		echo json_encode($this->messages);
 	}
 	private function send() {
 		$sent = new emailer(
 			$this->config['mail'],
 			$this->formData['subject'],
 			$this->formData['message'],
-			$this->formData['email']
+			$this->formData['email'],
+			'',
+			''
 		);
 
 		if ($sent) {

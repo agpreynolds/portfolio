@@ -4,8 +4,6 @@ $title = 'Contact Me';
 $id = 'contact';
 
 include('includes/start.php'); 
-
-$form = new contact($_POST);
 ?>
 
 <section id="contact">
@@ -15,31 +13,31 @@ $form = new contact($_POST);
 
 		<p>If you would like to get in touch, you can do so by using the form below</p>
 
-		<?php include('includes/messages.php'); ?>
+		<div class="messages"></div>		
 		
-		<div class="form-group">
-			<label for="email" class="col-sm-2 control-label">Email</label>
-			<div class="col-sm-10">
+		<div id="email" class="form-group">
+			<label for="email" class="col-md-1 control-label">Email</label>
+			<div class="col-md-11">
 				<input type="email" class="form-control" name="email" placeholder="Email">
 			</div>
 		</div>
 
-		<div class="form-group">
-			<label for="subject" class="col-sm-2 control-label">Subject</label>
-			<div class="col-sm-10">
+		<div id="subject" class="form-group">
+			<label for="subject" class="col-md-1 control-label">Subject</label>
+			<div class="col-md-11">
 				<input type="text" class="form-control" name="subject" placeholder="Subject">
 			</div>
 		</div>
 				
-		<div class="form-group">
-			<label for="message" class="col-sm-2 control-label">Email</label>
-			<div class="col-sm-10">
+		<div id="body" class="form-group">
+			<label for="message" class="col-md-1 control-label">Email</label>
+			<div class="col-md-11">
 				<textarea name="message" class="form-control" rows="5" placeholder="Enter Message..."></textarea>			  
 			</div>
 		</div>
 		
 		<div class="form-group">
-			<div class="col-sm-offset-2 col-sm-10">
+			<div class="col-md-offset-1 col-md-11">
 				<input class="btn btn-primary" type="submit" value="Send Message"/>
 			</div>
 		</div>
