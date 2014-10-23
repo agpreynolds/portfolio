@@ -6,86 +6,118 @@ include('includes/start.php');
 
 ?>
 
-<section id="cv">
-	<article id="work">
-		<header>
-			<h2>Experience</h2>
-		</header>
-		<article>
-			<header>
-				<h3>June 2014 - Present</h3>
-				<h4>Webree.com, Portsmouth</h4>
-				<h5>Junior Developer</h5>
-			</header>
-		</article>
+<script id="tmpl-cv" type="text/x-handlebars-template">
+
+	<header>
+		<h2>Experience</h2>
+	</header>
+
+	{{#each jobs}}
+
 		<article>
 			<header class="row">
 				<div class="col-md-8">
-					<h3>September 2012 - May 2014</h3>
-					<h4>Estee Lauder Companies, Fareham</h4>					
-					<h5>Undergraduate Engineer / Undergraduate Placement Student</h5>
+					<h3>{{startDate}} - {{endDate}}</h3>
+					<h4>{{company}}, {{location}}</h4>
+					<h5>{{jobTitle}}</h5>
 				</div>
-				<img class="col-md-4" src="/media/images/lauder.png" alt="Estee Lauder Companies">
+				
+				{{#if image}}
+					<img class="col-md-4" src="/media/images/{{image}}" alt="{{company}}">
+				{{/if}}
 			</header>
-		</article>		
-	</article>
 
-	<article id="education">
-		<header>
-			<h2>Qualifications</h2>
-		</header>
+			{{#if roles}}
+
+				<header>
+					<h4>Achievements and Responsibilities
+				</header>
+
+				<ul>
+
+				{{#each roles}}
+
+					<li>{{this}}</li>
+
+				{{/each}}
+
+				</ul>
+
+			{{/if}}
+
+			{{#if training}}
+
+				<header>
+					<h4>Training Courses</h4>
+				</header>
+
+				<ul>
+
+				{{#each training}}
+					<li>{{name}}, {{provider}}</li>
+				{{/each}}
+
+				</ul>
+
+			{{/if}}
+		</article>
+		
+	{{/each}}
+
+	<header>
+		<h2>Education</h2>
+	</header>
+
+	{{#each education}}
+
 		<article>
-			<header>
-				<h3>September 2010 - May 2014</h3>
-				<h4>University of Portsmouth</h4>
-				<h5>BSc (Hons) Web Technologies</h5>
+			<header class="row">
+				<div class="col-md-8">
+					<h3>{{startDate}} - {{endDate}}</h3>
+					<h4>{{institution}}</h4>
+					
+					{{#if qualification}}
+						<h5>{{qualification}}</h5>
+					{{/if}}
+				</div>
+				
+				{{#if image}}
+					<img class="col-md-4" src="/media/images/{{image}}" alt="{{company}}">
+				{{/if}}
 			</header>
-		</article>
-		<article id="sixth">
-			<header>
-				<h3>September 2003 - 2010</h3>
-				<h4>Collingwood College</h4>
-			</header>
-			<section class="results content-collapsed">
-				<article>
-					<header>
-						<h4>A Levels</h4>
-					</header>
-					<ul>
-						<li>Applied ICT - A</li>
-						<li>Business Studies - B</li>
-						<li>Maths - C</li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h4>AS Levels</h4>
-					</header>
-					<ul>
-						<li>Computing - B</li>
-						<li>Economics - D</li>
-					</ul>
-				</article>
-				<article>
-					<header>
-						<h4>GCSE's</h4>
-					</header>
-					<ul>
-						<li>Science 			- A*</li>
-						<li>Maths 				- A</li>
-						<li>Business Studies 	- A</li>
-						<li>Religious Studies 	- A</li>
-						<li>Geography		 	- B</li>
-						<li>English Language	- B</li>
-						<li>English Literature	- B</li>
-						<li>Food Technology		- B</li>
-						<li>ECDL ICT Double Award	</li>
-					</ul>
-				</article>
-			</section>
-		</article>
-	</article>
 
-</section>
+			{{#if results}}
+
+				<a class="more btn-link">See Results</a>
+				<section class="results collapse">
+					{{#each results}}
+					
+						<article>						
+							<header>
+								<h6>{{name}}</h6>
+							</header>
+							<ul>
+								{{#each items}}
+									<li>
+									{{name}} 
+									{{#if grade}}
+										- {{grade}}
+									{{/if}}
+									</li>
+								{{/each}}							
+							</ul>
+						</article>
+
+					{{/each}}
+				</section>
+
+			{{/if}}
+		</article>
+		
+	{{/each}}
+
+</script>
+
+<section id="cv"></section>
 
 <?php include('includes/footer.php'); ?>

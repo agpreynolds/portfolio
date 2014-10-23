@@ -5,17 +5,13 @@ $title = 'Portfolio of Work';
 include('includes/start.php');	
  			
 ?>
-<script type="text/javascript">
-	//var portfolio_items = <?php echo json_encode(include('php/configuration/portfolio.php')); ?>
-</script>
-
 <script id="tmpl-feature" type="text/x-handlebars-template">	
 		
 	<header>
 		<h1>{{name}}</h1>
 	</header>
 
-	<div class="media">
+	<div class="col-md-4">
 		<img src="/media/images/portfolio/{{image}}">
 
 		{{#if gitRepo}}
@@ -26,10 +22,11 @@ include('includes/start.php');
 	  	{{/if}}
 	</div>
 	
+	<div class="col-md-8">
 	<p>{{{content}}}</p>
+	</div>
 	
-	<a href="{{uri}}" class="btn btn-primary pull-right" target="_blank">View Project</a>
-	
+	<a href="{{uri}}" class="btn btn-primary pull-right" target="_blank">View Project</a>	
 
 </script>
 
