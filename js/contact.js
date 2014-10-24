@@ -28,11 +28,14 @@ var contact = contact || {
 			{
 				var _this = $(item);
 
-				_this.removeClass('has-error');
+				_this.removeClass('has-error');				
 
 				if (_this.find('input,textarea').val() == '')
-				{
+				{					
+					var error = "Please enter a value for field: <strong>" + _this.find('label').html() + "</strong>";
+
 					_this.addClass('has-error');
+					$('.messages').append($('<p>').addClass('alert alert-danger').html(error));
 				}
 			});
 

@@ -20,7 +20,5 @@
 	</head>
 	<body class="container-fluid">
 		<header>
-			<?php include ('nav.php'); ?>
-
-			<h1><?php echo $title; ?></h1>
+			<?php include ('nav.php'); ?>			
 		</header>

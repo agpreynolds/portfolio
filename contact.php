@@ -8,6 +8,7 @@ include('includes/start.php');
 
 <section id="contact">
 
+	<h1>Contact Me</h1>
 
 	<form class="form-horizontal" role="form" name="contact" method="post" action="contact.php">
 
@@ -30,7 +31,7 @@ include('includes/start.php');
 		</div>
 				
 		<div id="body" class="form-group">
-			<label for="message" class="col-md-1 control-label">Email</label>
+			<label for="message" class="col-md-1 control-label">Message</label>
 			<div class="col-md-11">
 				<textarea name="message" class="form-control" rows="5" placeholder="Enter Message..."></textarea>			  
 			</div>

@@ -17,6 +17,10 @@ section#portfolio article.item {
 	height:400px;
 }
 
+.tag {
+	padding: .4em .4em .4em;
+	margin: 0 .1em;	
+}
 
 .navbar {
 	background:#D23641;
