@@ -41,6 +41,18 @@ portfolio.items = [
 		]	
 	},
 	{
+		name: 'Real Time Sports Results',
+		image: 'scores2.png',
+		abstract: 'Using websockets to update sports scores in real time',
+		content: "This is a hobby project which is currently in progress and as such there is very little to view on the project's website.</p><p>The project aims to do the following:</p><ul><li>Collect twitter data relating to a sample group of football matches</li><li>Mine the data to identify key words and phrases users tweet in response to a significant event occurring in a football match</li><li>Develop an algorithm capable of identifying in real time when a significant event occurs in a football match</li></ul><p>The first prototype of the algorithm was developed and tested during the 2014 World Cup, with a significant success being able to correctly identify the time the only goal was scored in the World Cup final.<p>An API and backend system are currently in development to attempt to visually identify trends in the data so that the algorithm can be enhanced further.<p>This application was originally created as a spin off of a group research project into the use of websockets compared to http polling in communicating real time data.</p><p>I would like to recognise <a href='http://alasdairsmith.org' target='_blank'>Alasdair Smith</a> for his contribution to the project at this stage",
+		uri: 'http://sportsball.agpreynolds.co.uk',
+		tags: [
+			'PHP','Laravel','Twitter API','Websockets','Pusher','JavaScript','jQuery','AngularJS','HTML','CSS','Bootstrap'
+		],
+		gitUser: '40thieves',
+		gitRepo: 'sportsball'
+	},
+	{
 		name: 'Semantic Recipe Finder',
 		image: 'fyp.png',
 		abstract: 'My final year project',
@@ -49,7 +61,7 @@ portfolio.items = [
 		tags: [
 			'HTML','CSS','JavaScript','jQuery','PHP','Sparql','Turtle','MySql','ARC2'
 		],
-		gitUser: 'palacealex',
+		gitUser: 'agpreynolds',
 		gitRepo: 'cookbook'
 	},
 	{
@@ -61,20 +73,8 @@ portfolio.items = [
 		tags: [
 			'HTML','CSS','JavaScript','Webgl'
 		],
-		gitUser: 'palacealex',
+		gitUser: 'agpreynolds',
 		gitRepo: 'webgl_globe'
-	},
-	{
-		name: 'Real Time Sports Results',
-		image: 'scores.png',
-		abstract: 'Using websockets to update sports scores in real time',
-		content: "<p>This application was created as part of a group research project into the use of websockets compared to http polling in communicating real time data.</p><p>I would like to recognise <a href='http://alasdairsmith.org' target='_blank'>Alasdair Smith</a> for his contribution to the project</p>",
-		uri: 'http://sportsball.agpreynolds.co.uk',
-		tags: [
-			'PHP','Laravel','Twitter API','Websockets','Pusher','JavaScript','jQuery','AngularJS','HTML','CSS','Bootstrap'
-		],
-		gitUser: '40thieves',
-		gitRepo: 'sportsball'
 	},
 	{
 		name: 'First World Problems',
@@ -85,12 +85,12 @@ portfolio.items = [
 		tags: [
 			'JavaScript','jQuery','PHP','Twitter API','Google Feeds API','HTML','CSS'
 		],
-		gitUser: 'palacealex',
+		gitUser: 'agpreynolds',
 		gitRepo: 'pubhack'
 	},
 	{
 		name: 'Awkward Situations',
-		image: '',
+		image: 'pubhack3',
 		abstract: "This is an application which enables users to have a message texted to their phone with a randomly generated excuse for escaping an awkward situation",
 		content: "This is an application which enables users to have a message texted to their phone with a randomly generated excuse for escaping an awkward situation",
 		uri: 'http://awks.agpreynolds.co.uk',

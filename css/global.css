@@ -12,11 +12,19 @@ div.img {
 
 #feature {overflow: hidden;}
 
+#feature img {
+	display:block;
+	margin:10px auto;
+}
+
 section#portfolio article.item {	
 	text-align:center;
 	height:400px;
 }
 
+.tags {
+	text-align:center;
+}
 .tag {
 	padding: .4em .4em .4em;
 	margin: 0 .1em;	

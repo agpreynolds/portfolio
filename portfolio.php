@@ -14,13 +14,6 @@ include('includes/start.php');
 	<div class="col-md-4">
 		<img src="/media/images/portfolio/{{image}}">
 
-		{{#if gitRepo}}
-			<section class="git">
-				<iframe src="http://ghbtns.com/github-btn.html?user={{gitUser}}&repo={{gitRepo}}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-				<iframe src="http://ghbtns.com/github-btn.html?user={{gitUser}}&repo={{gitRepo}}&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-		  	</section>
-	  	{{/if}}
-
 	  	{{#if tags}}
 			<p class="tags">
 				{{#each tags}}
@@ -28,6 +21,13 @@ include('includes/start.php');
 				{{/each}}
 			</p>
 		{{/if}}
+		
+		{{#if gitRepo}}
+			<section class="git row">
+				<iframe class="col-xs-6" src="http://ghbtns.com/github-btn.html?user={{gitUser}}&repo={{gitRepo}}&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+				<iframe class="col-xs-6" src="http://ghbtns.com/github-btn.html?user={{gitUser}}&repo={{gitRepo}}&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+		  	</section>
+	  	{{/if}}
 
 	</div>
 	
