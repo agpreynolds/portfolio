@@ -12,9 +12,10 @@ include('includes/start.php');
 
 	<form class="form-horizontal" role="form" name="contact" method="post" action="contact.php">
 
-		<p>If you would like to get in touch, you can do so by using the form below</p>
+		<p>If you would like to get in touch, you can do so using the form below:</p>
 
-		<div class="messages"></div>		
+		<div class="errors alert alert-danger" style="display:none;"></div>
+		<div class="success alert alert-success" style="display:none;"></div>
 		
 		<div id="email" class="form-group">
 			<label for="email" class="col-md-1 control-label">Email</label>

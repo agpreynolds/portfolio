@@ -22,7 +22,7 @@ var contact = contact || {
 		this.form.bind('submit',function(e)
 		{
 			e.preventDefault();
-			$('.messages').empty();
+			$('.errors,.success').hide().empty();
 
 			$(contact.containers).each(function(index,item)
 			{
@@ -35,7 +35,7 @@ var contact = contact || {
 					var error = "Please enter a value for field: <strong>" + _this.find('label').html() + "</strong>";
 
 					_this.addClass('has-error');
-					$('.messages').append($('<p>').addClass('alert alert-danger').html(error));
+					$('.errors').append($('<p>').html(error));
 				}
 			});
 
@@ -48,9 +48,15 @@ var contact = contact || {
 
 					$(response).each(function(index,item)
 					{
-						$('.messages').append($('<p>').addClass('alert alert-success').html(item));
+						$('.success').append($('<p>').html(item));
 					});
+					
+					$('.success').show();
 				})
+			}
+			else
+			{
+				$('.errors').show();
 			}
 
 		});
